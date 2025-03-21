@@ -5,11 +5,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.suma_document"
+    namespace = "com.example.suma_mrz"
     compileSdk = 35
 
     defaultConfig {
         minSdk = 21
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -36,10 +37,10 @@ publishing {
     publications {
         create<MavenPublication>("release") {
             groupId = "com.example"
-            artifactId = "suma_document"
+            artifactId = "suma_mrz"
             version = "0.0.3"
 
-            artifact("libs/dot-document-8.7.0.aar")
+            artifact("libs/dot-mrz-8.7.0.aar")
         }
     }
 }

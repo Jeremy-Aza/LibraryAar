@@ -38,7 +38,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.example"
             artifactId = "suma_ui"
-            version = "0.0.2-beta"
+            version = "0.0.3"
 
             artifact("libs/dot-ui-8.7.0.aar")
         }
