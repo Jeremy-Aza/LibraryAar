@@ -38,7 +38,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.example"
             artifactId = "suma_camera"
-            version = "0.0.1-beta"
+            version = "0.0.2-beta"
 
             artifact("libs/dot-camera-8.7.0.aar")
         }

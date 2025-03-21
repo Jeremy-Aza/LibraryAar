@@ -37,7 +37,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.example"
             artifactId = "suma_document"
-            version = "0.0.1-beta"
+            version = "0.0.2-beta"
 
             artifact("libs/dot-document-8.7.0.aar")
         }
