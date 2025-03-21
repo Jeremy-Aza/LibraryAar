@@ -40,13 +40,9 @@ publishing {
             artifactId = "suma_core"
             version = "0.0.1-beta"
 
-            afterEvaluate {
-                from(components["release"])
-            }
+            artifact("libs/dot-core-8.7.0.aar")
         }
     }
 }
 
-dependencies {
-    implementation(files("libs/dot-core-8.7.0.aar"))
-}
+dependencies {}

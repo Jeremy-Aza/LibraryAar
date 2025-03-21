@@ -39,13 +39,9 @@ publishing {
             artifactId = "suma_document"
             version = "0.0.1-beta"
 
-            afterEvaluate {
-                from(components["release"])
-            }
+            artifact("libs/dot-document-8.7.0.aar")
         }
     }
 }
 
-dependencies {
-    implementation(files("libs/dot-document-8.7.0.aar"))
-}
+dependencies {}

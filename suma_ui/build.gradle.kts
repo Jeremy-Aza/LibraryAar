@@ -40,13 +40,9 @@ publishing {
             artifactId = "suma_ui"
             version = "0.0.1-beta"
 
-            afterEvaluate {
-                from(components["release"])
-            }
+            artifact("libs/dot-ui-8.7.0.aar")
         }
     }
 }
 
-dependencies {
-    implementation(files("libs/dot-ui-8.7.0.aar"))
-}
+dependencies {}

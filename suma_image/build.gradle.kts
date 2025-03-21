@@ -40,13 +40,9 @@ publishing {
             artifactId = "suma_image"
             version = "0.0.1-beta"
 
-            afterEvaluate {
-                from(components["release"])
-            }
+            artifact("libs/dot-image-8.7.0.aar")
         }
     }
 }
 
-dependencies {
-    implementation(files("libs/dot-image-8.7.0.aar"))
-}
+dependencies {}
